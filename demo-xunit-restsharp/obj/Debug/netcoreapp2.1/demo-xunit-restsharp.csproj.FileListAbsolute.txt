@@ -1,0 +1,14 @@
+C:\code\demo-xunit-restsharp\demo-xunit-restsharp\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\code\demo-xunit-restsharp\demo-xunit-restsharp\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\code\demo-xunit-restsharp\demo-xunit-restsharp\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\code\demo-xunit-restsharp\demo-xunit-restsharp\bin\Debug\netcoreapp2.1\demo-xunit-restsharp.deps.json
+C:\code\demo-xunit-restsharp\demo-xunit-restsharp\bin\Debug\netcoreapp2.1\demo-xunit-restsharp.runtimeconfig.json
+C:\code\demo-xunit-restsharp\demo-xunit-restsharp\bin\Debug\netcoreapp2.1\demo-xunit-restsharp.runtimeconfig.dev.json
+C:\code\demo-xunit-restsharp\demo-xunit-restsharp\bin\Debug\netcoreapp2.1\demo-xunit-restsharp.dll
+C:\code\demo-xunit-restsharp\demo-xunit-restsharp\bin\Debug\netcoreapp2.1\demo-xunit-restsharp.pdb
+C:\code\demo-xunit-restsharp\demo-xunit-restsharp\obj\Debug\netcoreapp2.1\demo-xunit-restsharp.csprojAssemblyReference.cache
+C:\code\demo-xunit-restsharp\demo-xunit-restsharp\obj\Debug\netcoreapp2.1\demo-xunit-restsharp.csproj.CoreCompileInputs.cache
+C:\code\demo-xunit-restsharp\demo-xunit-restsharp\obj\Debug\netcoreapp2.1\demo-xunit-restsharp.AssemblyInfoInputs.cache
+C:\code\demo-xunit-restsharp\demo-xunit-restsharp\obj\Debug\netcoreapp2.1\demo-xunit-restsharp.AssemblyInfo.cs
+C:\code\demo-xunit-restsharp\demo-xunit-restsharp\obj\Debug\netcoreapp2.1\demo-xunit-restsharp.dll
+C:\code\demo-xunit-restsharp\demo-xunit-restsharp\obj\Debug\netcoreapp2.1\demo-xunit-restsharp.pdb
