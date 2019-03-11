@@ -8,7 +8,7 @@ namespace PhoneBookTest
     public class DomainTests
     {
         [Fact]
-        public void GetTest()
+        public void GetDomainTest()
         {
             var test = new DomainPage();
             test.GetDomain();
