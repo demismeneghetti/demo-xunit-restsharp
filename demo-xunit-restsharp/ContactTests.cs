@@ -46,5 +46,15 @@ namespace PhoneBookTest
             var test = new ContactsPage();
             test.PutContact(id, name, mobilephone, homephone, code);
         }
+
+        [Theory]
+        [InlineData("", HttpStatusCode.NotFound)]
+        [InlineData("555555555555555555555555", HttpStatusCode.NotFound)]
+        [InlineData("56d5efa8c82593800291c02b", HttpStatusCode.NoContent)]
+        public void DeleteContactTest(string id, HttpStatusCode code)
+        {
+            var test = new ContactsPage();
+            test.DeleteContact(id, code);
+        }
     }
 }

@@ -4,23 +4,13 @@ using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Text;
+using Xunit;
 using Xunit.Abstractions;
 
 namespace PhoneBookTest
 {
     public class ContactsPage
     {
-        public void GetDomain()
-        {
-            RestClient client = new RestClient($"{DomainPage.URL}/contacts");
-            var request = new RestRequest(Method.GET);
-
-            IRestResponse response = client.Execute(request);
-
-            var statusCode = response.StatusCode;
-            statusCode.Equals(HttpStatusCode.OK);
-            statusCode.Should().BeEquivalentTo("! :) :) API PHONE-BOOK UP :) :) ");
-        }
 
         public void PostContact(string name, string mobilephone, string homephone, HttpStatusCode code)
         {
@@ -34,7 +24,7 @@ namespace PhoneBookTest
             IRestResponse response = client.Execute(request);
 
             var statusCode = response.StatusCode;
-            statusCode.Should().BeEquivalentTo(code);
+            Assert.Equal(code, statusCode);
         }
 
         public void GetContact(string parameter_type, string parameter_content, HttpStatusCode code)
@@ -45,8 +35,11 @@ namespace PhoneBookTest
             IRestResponse response = client.Execute(request);
 
             var statusCode = response.StatusCode;
-            statusCode.Should().BeEquivalentTo(code);
-            //statusCode.Should().BeEquivalentTo("");
+            Assert.Equal(code, statusCode);
+
+            /////// Implementar a validação do JSON
+            //var message = response.Content;
+            //message.Should().BeEquivalentTo("");
         }
 
         public void PutContact(string id, string name, string mobilephone, string homephone, HttpStatusCode code)
@@ -61,7 +54,7 @@ namespace PhoneBookTest
             IRestResponse response = client.Execute(request);
 
             var statusCode = response.StatusCode;
-            statusCode.Should().BeEquivalentTo(code);
+            Assert.Equal(code, statusCode);
         }
 
         public void DeleteContact(string id, HttpStatusCode code)
@@ -72,7 +65,7 @@ namespace PhoneBookTest
             IRestResponse response = client.Execute(request);
 
             var statusCode = response.StatusCode;
-            statusCode.Should().BeEquivalentTo(code);
+            Assert.Equal(code, statusCode);
         }
     }
 }
