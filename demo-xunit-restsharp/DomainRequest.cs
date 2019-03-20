@@ -4,7 +4,7 @@ using Xunit;
 
 namespace PhoneBookTest
 {
-    public class DomainPage
+    public class DomainRequest
     {
         public const string URL = "http://localhost:5000";
 

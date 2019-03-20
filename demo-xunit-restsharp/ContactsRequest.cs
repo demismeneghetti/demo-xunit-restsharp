@@ -37,7 +37,7 @@ namespace PhoneBookTest
             //message.Should().BeEquivalentTo("");
         }
 
-        public void PutContact(string id, string name, string mobilephone, string homephone, HttpStatusCode code)
+        public void PutContact(string id, string name, string mobilephone, string homephone, HttpStatusCode code, HttpResponseHeader res)
         {
             var client = new RestClient($"{DomainRequest.URL}/contacts/{id}");
             var request = new RestRequest(Method.PUT);
@@ -50,6 +50,10 @@ namespace PhoneBookTest
 
             var statusCode = response.StatusCode;
             Assert.Equal(code, statusCode);
+
+
+            var statusMsg = response.Content;
+            Assert.Equal(res, statusMsg);
         }
 
         public void DeleteContact(string id, HttpStatusCode code)
